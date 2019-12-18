@@ -1,0 +1,17 @@
+
+
+.AppBarMenu {
+    flexGrow: 1;
+
+    .MuiAppBar-root {
+        background-color: #592E1B;
+    }
+
+    &__title {
+        flex-grow: 1;
+    }
+
+     button {
+        margin-right: 16px;
+    }
+}
