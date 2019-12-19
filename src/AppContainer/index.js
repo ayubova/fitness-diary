@@ -4,15 +4,14 @@ import {Switch, Route, withRouter} from 'react-router-dom';
 import AppBarMenu from '../AppBarMenu';
 import ProductList from '../ProductList';
 
-import {PRODUCTLIST} from '../constants/routes';
+import {PRODUCT_LIST} from '../constants/routes';
 
 const AppContainer = () => {
     return (
         <div>
             <AppBarMenu />
             <Switch>
-                <Route path={PRODUCTLIST} component={ProductList} />
-                {/* <Route path={USER_MANAGEMENT_ROUTE} component={UserManagement} /> */}
+                <Route path={PRODUCT_LIST} component={ProductList} />
             </Switch>
         </div>
     );

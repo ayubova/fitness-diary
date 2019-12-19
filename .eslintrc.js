@@ -118,6 +118,7 @@ module.exports = {
         // React
         'react/sort-comp': 'off',
         'react/require-default-props': 'off',
+        'react/prop-types': 'off',
         'react/jsx-filename-extension': ['error', {extensions: ['.js']}],
         'react/jsx-first-prop-new-line': ['error', 'multiline-multiprop'],
         'react/jsx-indent': ['error', 4],

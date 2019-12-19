@@ -1,2 +1,3 @@
-export const PRODUCTLIST = '/productlist';
-export const MENU = './menu';
+export const PRODUCT_LIST = '/productlist';
+export const MENU = '/menu';
+export const PROGRAM = '/program';
