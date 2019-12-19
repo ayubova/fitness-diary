@@ -5,12 +5,11 @@ import ListItemText from '@material-ui/core/ListItemText';
 
 import '../style.scss';
 
-const ProductItem = ({name, description}) => (
+const WorkoutItem = ({name, repeat, weight, comment}) => (
     <List key={name} dense disablePadding>
-        <ListItem divider className="ProductList__listItem">
-            <ListItemText primaryTypographyProps={{variant: 'h6'}} primary={name} secondary={description} />
-        </ListItem>
+        <ListItem divider className="WorkoutPlan__listItem" />
+        <ListItemText primary={`${name} ${repeat} ${weight}`} secondary={comment} />
     </List>
 );
 
-export default ProductItem;
+export default WorkoutItem;

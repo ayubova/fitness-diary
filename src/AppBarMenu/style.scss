@@ -4,14 +4,17 @@
     flexGrow: 1;
 
     .MuiAppBar-root {
-        background-color: #592E1B;
+        background-color: #9C9094;
     }
 
     &__title {
         flex-grow: 1;
+        font-size: 24px!important;
+        font-weight: bold!important
     }
 
      button {
         margin-right: 16px;
     }
+
 }

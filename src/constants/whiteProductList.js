@@ -25,7 +25,7 @@ const whiteProductList = [
     },
     {
         name: 'Сыры',
-        description: 'до 30 гр в день',
+        description: 'до 30 гр в день нежирные сорта',
     },
     {
         name: 'Авокадо и орехи',

@@ -3,8 +3,9 @@ import {Switch, Route, withRouter} from 'react-router-dom';
 
 import AppBarMenu from '../AppBarMenu';
 import ProductList from '../ProductList';
+import WorkoutPlan from '../WorkoutPlan';
 
-import {PRODUCT_LIST} from '../constants/routes';
+import {PRODUCT_LIST, WORKOUT_PLAN} from '../constants/routes';
 
 const AppContainer = () => {
     return (
@@ -12,6 +13,7 @@ const AppContainer = () => {
             <AppBarMenu />
             <Switch>
                 <Route path={PRODUCT_LIST} component={ProductList} />
+                <Route path={WORKOUT_PLAN} component={WorkoutPlan} />
             </Switch>
         </div>
     );

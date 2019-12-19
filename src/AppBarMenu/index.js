@@ -9,7 +9,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import {Link} from 'react-router-dom';
 
-import {PRODUCT_LIST, MENU, PROGRAM} from '../constants/routes';
+import {PRODUCT_LIST, MENU, WORKOUT_PLAN} from '../constants/routes';
 
 import './style.scss';
 
@@ -49,9 +49,14 @@ const AppBarMenu = () => {
                     >
                         <MenuItem component={Link} to={PRODUCT_LIST} onClick={() => setMenuIsMenuOpen(false)}>Список продуктов</MenuItem>
                         <MenuItem component={Link} to={MENU} onClick={() => setMenuIsMenuOpen(false)}>Меню на неделю</MenuItem>
-                        <MenuItem component={Link} to={PROGRAM} onClick={() => setMenuIsMenuOpen(false)}>Программа тренировок</MenuItem>
+                        <MenuItem
+                            component={Link}
+                            to={WORKOUT_PLAN}
+                            onClick={() => setMenuIsMenuOpen(false)}
+                        >Программа тренировок
+                        </MenuItem>
                     </Menu>
-                    <Typography variant="h6" className="AppBarMenu__title">Фитнес-дневник</Typography>
+                    <Typography variant="button" className="AppBarMenu__title">Фитнес-дневник</Typography>
                     <div>
                         <IconButton
                             aria-haspopup="true"
