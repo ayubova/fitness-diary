@@ -55,6 +55,7 @@ const AppBarMenu = () => {
                             onClick={() => setMenuIsMenuOpen(false)}
                         >Программа тренировок
                         </MenuItem>
+                        <MenuItem component={Link} to="/" onClick={() => setMenuIsMenuOpen(false)}>На главную</MenuItem>
                     </Menu>
                     <Typography variant="button" className="AppBarMenu__title">Фитнес-дневник</Typography>
                     <div>

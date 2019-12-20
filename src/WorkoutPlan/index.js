@@ -11,10 +11,10 @@ import './style.scss';
 const WorkoutPlan = () => (
     <div className="WorkoutPlan__wrapper">
         {workoutPlan.map(({day, title, exercises}) => (
-            <Grid container item className="WorkoutPlan__column">
+            <Grid container className="WorkoutPlan__column">
                 <Typography variant="h5" gutterBottom>{day}</Typography>
                 <div>
-                    <Typography variant="h6" gutterBottom>{title}</Typography>
+                    <Typography variant="button" gutterBottom>{title}</Typography>
                 </div>
                 {exercises.map((item) => (<Grid key={item.name} item><WorkoutItem {...item} /> </Grid>))}
             </Grid>

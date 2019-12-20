@@ -1,0 +1,24 @@
+.Menu {
+  &__wrapper{
+    background: #f7edf2;
+    padding: 24px;
+    color:#3A2626;
+    min-height: 100vh;
+    max-width: 100%;
+  }
+
+  &__item {
+    background-color: #F8F5F9;
+    margin: 8px!important;
+    padding: 8px;
+    border-radius: 24px;
+    box-shadow: 3px 3px 17px 0 rgba(0, 0, 0, 0.17);
+    height: fit-content;
+    max-width: 48%;
+    word-break: break-word;
+  }
+
+  &__mealTitle {
+    font-weight: 550!important;
+  }
+} 
